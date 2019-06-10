@@ -113,4 +113,4 @@ const STORE = [
   }
 ];
 
-console.log(STORE);
+

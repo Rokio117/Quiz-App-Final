@@ -36,7 +36,6 @@ function showQuestionNumber() {
   $(".number-of-questions").text(STORE.length);
   $("#final-score").text(userScore);
   $(".question-num").text(currentQuestion);
-  //inputs the current question number into the 'question _ of 10 span
 }
 
 function updateScore() {
@@ -87,12 +86,9 @@ function handleRestartQuiz() {
   $("#play-again-button").click(function(event) {
     location.reload();
   });
-
-  //Resets everything(all answers, score,question#), sends user back to intro screen
 }
 
 function startQuiz() {
-  //calls functions that deal with user interactions
   handleRestartQuiz();
   handleSubmitAnswer();
   handleLetsGo();

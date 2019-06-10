@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+ <html lang = "eng">
+  <head>
+    <link rel="stylesheet" href="wire-frame.css">
+    <title>Nick Hillary's Quiz Assignment</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name = "description" content = "Test your knolwedge of music throughout the ages.">
+  </head>
+   <body>
+     <header>Music Quiz</header>
+       <main>
+          <section id="page-1">
+            <div id="intro-greeting">
+              <p id = "intro-quote" class = "medium-font">Ready To Test Your Musical Knowledge?</p>
+              <img id = "intro-picture" src="https://res.cloudinary.com/teepublic/image/private/s--iZULBGhW--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1528291189/production/designs/2761365_0.jpg" alt ="I'll Handel This">
+            </img>
+            </div>
+            <button type="submit" id ="begin-button" class = "medium-font">Let's Go!</a>
+          </section>
+
+          <section id="page-2" class="hidden">
+              <div id= "number-display">
+                <div id = "question-num-display" class="question-num-display">Question <span class="question-num"></span> of <span class="number-of-questions"></span></div>
+                <div id = "score-num-display" class="score-num-display">Score: <span class="user-score"></span> of <span class="number-of-questions"></span></div>
+              </div>
+              
+            <div id ="main-interactive-area">
+              <h2 class="question">First Question Filler</h2>
+              <form id = "answer-area">
+                <fieldset id ="question-block">
+                  <div class="input-and-label">
+                    <input type="radio" name="question-name" class="answer-A-value radio" value="" required >
+                    <label for = "answer-A" class ="answer"><span id="answer-A">answer 1 Filler</span></label>
+                  </div> 
+      
+                  <div class="input-and-label">
+                    <input type="radio" name="question-name" class="answer-B-value radio" value="">
+                    <label for = "answer-B" class ="answer"><span id="answer-B">answer 2 Filler</span></label>
+                  </div>
+
+                  <div class="input-and-label">
+                    <input type="radio" name="question-name" class="answer-C-value radio" value="" >
+                    <label for = "answer-C" class ="answer"><span id="answer-C">answer 3 Filler</span></label>
+                  </div>
+                  
+                  <div class="input-and-label">
+                    <input type="radio" name="question-name" class="answer-D-value radio" value="">
+                    <label for = "answer-D" class ="answer"><span id="answer-D">answer 4 Filler</span></label>
+                  </div>
+                </fieldset>
+                <button type="submit" id = "question-submit" class = "question-submit medium-font">Submit</button>
+              </form>
+              
+            </div>
+          </section>
+
+          <section id="page-3" class="hidden">
+            <div id= "number-display">
+              <div id = "question-num-display" class="question-num-display">Question <span class="question-num"></span> of <span class="number-of-questions"></span></div>
+              <div id = "score-num-display" class="score-num-display">Score: <span class="user-score"></span> of <span class="number-of-questions"></span></div>
+            </div>
+            <section id = "feedback" class = "medium-font feedback">Congratulations! You chose the correct answer!</section>
+            <button type="button" id ="continue-button" class = "medium-font">Continue</button>
+          </section>
+
+          <section id="page-4" class="hidden">
+            <section id = "feedback" class = "medium-font feedback">Congratulations! Your score is <span id="final-score"></span> of <span class="number-of-questions"></span></section>
+            <img src="https://i.chzbgr.com/full/7465942784/h04CA7BF4/" id="feedback-picture" class="end-image" alt="Bach as Terminator: I'll Be Bach"> </img>
+            <button type="button" id ="play-again-button" class = "medium-font" >Play Again?</button>
+            </section>
+      </main>
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="questions.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+      
+       
+    </body>
+   
+</html>

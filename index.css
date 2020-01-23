@@ -16,7 +16,7 @@ main {
   height: 1000px;
 }
 header {
-  font-size: 100px;
+  font-size: 50px;
 }
 #reset-and-num-display {
   display:flex;
@@ -86,4 +86,9 @@ button:hover, input:hover {
 .medium-font,.answer,button {
   font-size: 40px;
 }
+
+@media screen and (min-width: 768px){
+  header{
+    font-size: 100px;
+  }
 

@@ -88,7 +88,8 @@ button:hover, input:hover {
 }
 
 @media screen and (min-width: 768px){
-  header{
+  header {
     font-size: 100px;
   }
+}
 
